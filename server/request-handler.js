@@ -1,4 +1,5 @@
 var storage = require('./message-data');
+var url = require('url');
 
 var requestHandler = function(request, response) {
   // Request and Response come from node's http module.
@@ -39,13 +40,14 @@ var requestHandler = function(request, response) {
       response.writeHead(201, headers);
       response.end(JSON.stringify(storage.messageData));
     });
-  } else if (request.method === 'GET') {
+  } else if (request.method === 'GET' && request.url.slice(0, 8) === '/classes') {
     // response.writeHead takes statusCode and headers
-    console.log('url ' + request.url);
+    console.log('url ' + JSON.stringify(url.parse(request.url)));
     response.writeHead(200, headers);
     console.log('Response data from inside GET request: ' + response.data);
     response.end(JSON.stringify(storage.messageData));
   } else {
+    response.writeHead(404, headers);
     console.log('Response data from inside ELSE statement: ' + response.data);
     response.end(JSON.stringify(storage.messageData));
   }
