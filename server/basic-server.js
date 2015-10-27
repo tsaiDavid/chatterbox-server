@@ -1,4 +1,6 @@
 /* Import node's http module: */
+var express = require('express');
+
 var http = require("http");
 var storage = require("./message-data");
 var handleRequest = require("./request-handler");

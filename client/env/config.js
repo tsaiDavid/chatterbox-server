@@ -11,7 +11,8 @@
 //   window.location.search = newSearch;
 // }
 
-var globalUser = prompt('What is your username?');
+var globalUser = 'testUserFromConfig';
+// var globalUser = prompt('What is your username?');
 
 // // Put your parse application keys here!
 // $.ajaxPrefilter(function (settings, _, jqXHR) {

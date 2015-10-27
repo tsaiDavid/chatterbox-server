@@ -3,7 +3,7 @@
 
 var app = {
   username: globalUser,
-  server: 'http://127.0.0.1:3000',
+  server: 'http://127.0.0.1:3000/classes',
   data: null,
   rooms: {},
   friends: {},
@@ -45,7 +45,7 @@ var app = {
       success: function (data) {
         app.data = Array.prototype.slice.call(data.results);
         app.data.forEach(function(el) {
-          if (!!!el.roomname) {
+          if (!el.roomname) {
             el.roomname = 'general';
             app.addRoom('general');
           } else {
