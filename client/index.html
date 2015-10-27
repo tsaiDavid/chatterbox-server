@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>chatterbox</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- dependencies -->
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="../node_modules/xss-filters/dist/xss-filters.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- your scripts -->
+    <script src="env/config.js"></script>
+    <script src="scripts/listeners.js"></script>
+
+     <!--  <script src="scripts/app-backbone.js"></script> -->
+    <script src="scripts/app.js"></script>
+  </head>
+  <body>
+    <div class="banner-container">
+      <h1 class="row">
+        <div class="col-md-12"></div>
+        <span class="title">chatterbox</span>
+      </h1>
+    </div>
+
+    <div class="body-container">
+      <!-- sidebar & chat row -->
+      <div class='row'>
+          <div class="sidebar col-sm-2 col-md-2 col-lg-2"></div>
+          <div class="chat col-sm-10 col-md-10 col-lg-10"></div>
+      </div>
+
+      <!-- bottom submit row -->
+      <div class="bottom-bar row">
+        <input class="roomname-entry col-md-2" placeholder="room name"></input>
+        <input class="message-entry col-md-8" placeholder=""></input>
+        <input type="button" class="send-message col-md-2" value="submit"></input>
+      </div>
+    </div>
+    <!--<script src="scripts/listeners.js"></script>-->
+  </body>
+</html>

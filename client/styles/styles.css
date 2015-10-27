@@ -1,0 +1,81 @@
+html, body {
+  height:100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.banner-container {
+  background-image: url(https://unsplash.it/g/1500/150/?random);
+    text-shadow: 2px 3px 4px #333;
+    width: 100%;
+    color: #fff;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.body-container {
+  padding-top: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 500px;
+}
+
+.sidebar {
+  font-style: Helvetica;
+  font-weight: lighter;
+  font-size: 20px;
+  padding: 15px;
+  background-color: #999;
+  height: 450px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat {
+  background-color: #eee;
+  height: 450px;
+  overflow-y: scroll;
+}
+
+.bottom-bar {
+  padding-top: 25px;
+}
+
+.username-entry{
+  text-align: center;
+}
+
+.message-entry{
+  text-align: right;
+}
+
+.message {
+  height: 40px;
+  border: 1px solid white;
+}
+
+.username {
+  font-weight: bold;
+  text-align: right;
+}
+
+.text {
+  text-align: left;
+  font-size: 12px;
+}
+
+.sidebar-hidden {
+  background-color: #333;
+}
+
+.roomname-entry {
+  text-align: center;
+  font-style: Helvetica;
+  font-weight: lighter;
+}
+
+.friends {
+  color: #5D92B1;
+}

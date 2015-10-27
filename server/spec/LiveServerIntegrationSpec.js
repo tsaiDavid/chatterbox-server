@@ -42,6 +42,10 @@ describe('server', function() {
     };
 
     request(requestParams, function(error, response, body) {
+      console.log('error ' + JSON.stringify(error));
+      console.log('response ' + JSON.stringify(response));
+      console.log('body ' + JSON.stringify(body));
+
       expect(response.statusCode).to.equal(201);
       done();
     });
