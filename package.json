@@ -1,11 +1,11 @@
 {
   "name": "chatterbox",
   "version": "0.0.1",
-  "main": "./app.js",
+  "main": "app.js",
   "author": "Hack Reactor",
   "license": "Copyright 2013, Hack Reactor. All rights reserved.",
   "scripts": {
-    "start": "node ./app.js"
+    "start": "node app.js"
   },
   "devDependencies": {
     "mocha": "^1.21.4",
