@@ -1,0 +1,14 @@
+{
+  "name": "2015-10-chatterbox-server",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tsaiDavid/2015-10-chatterbox-server",
+  "authors": [
+    "Hack Reactor Students <accounts@hackreactor.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "underscore": "~1.8.3",
+    "xss-filters": "~1.2.6"
+  }
+}
